@@ -14,33 +14,55 @@
             <div class="col">
                 <div class="feature-img">
                     <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\pic1.png" width="100%">
+                    <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\play.png" class="play-btn" onclick="playVideo('C:\Users\Ictech\Documents\PreBootCamp\embedded-video\VID3.mp4')">
                 </div>
             </div>
             <div class="col">
                <div class="small-img-row">
                    <div class="small-img">
-                       <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\pic2.png" width="80%">
+                       <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\pic2.png" width="100%">
+                       <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\play.png" class="play-btn">
                     </div>
                     <p>How to add multiple video in a video gallery </p>   
                </div>
                <div class="small-img-row">
                  <div class="small-img">
-                    <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\pic3.png" width="80%">
+                    <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\pic3.png" width="100%">
+                        <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\play.png" class="play-btn">
                  </div>
                  <p>How to add multiple video in a video gallery </p>   
             </div>
             <div class="small-img-row">
                 <div class="small-img">
-                    <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\pic4.png" width="80%">
+                    <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\pic4.png" width="100%">
+                    <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\play.png" class="play-btn">
                  </div>
                  <p>How to add multiple video in a video gallery </p>   
-            </div> 
+                </div> 
             </div>
         </div>
    </div>
     
+   <div class="video-player" id="videoPlayer">
+       <video width="100%" controls autoplay id="myVideo"> <source src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\VID3.mp4" type="video/mp4"> </video>
+       <img src="C:\Users\Ictech\Documents\PreBootCamp\embedded-video\close.png" class="close-btn" onclick="stopVideo()">
 
+   </div>
 
+<script>
+   var videoPlayer = document.getElementById("videoPlayer");
+   var myVideo = document.getElementById("myVideo");
+
+   function stopVideo() {
+       videoPlayer.style.display = "none";
+   }
+
+   function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+        
+   }
+</script>
 
 
 
