@@ -7,6 +7,35 @@ body{
     background: grey;
 }
 
+nav{
+    background:goldenrod;
+    width: 100%;
+    overflow: auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    float: left;
+}
+nav a{
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    
+    font-size: 17px;
+    color: white;
+    padding: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav :hover{
+    background: turquoise;
+    color: black;
+}
+
 .container{
     width: 100%;
     margin: 80px auto;
@@ -84,4 +113,15 @@ video:focus{
     right: 10px;
     width: 20px;
     cursor: pointer;
+}
+footer{
+    width: 100%;
+    background: goldenrod;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
 }
